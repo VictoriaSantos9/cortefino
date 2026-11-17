@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registo | Corte Fino</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body class="auth-page">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">c.</span> corte fino</a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="cortes.html">Cortes</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="login.html">Entrar</a>
+        <a class="btn btn-dark" href="registo.html">Registar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container auth-shell">
+    <section class="auth-card">
+      <div class="auth-copy">
+        <p class="eyebrow">Bem-vindo</p>
+        <h1>Cria a tua conta</h1>
+        <p>Guarda favoritos, salva o teu perfil morfológico e recebe recomendações personalizadas.</p>
+      </div>
+
+      <form class="auth-form" action="perfil-morfologico.html">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="O teu nome" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="nome@email.com" required />
+        </label>
+        <label class="password-field">
+          Palavra-passe
+          <input id="registoPassword" type="password" name="password" placeholder="Pelo menos 6 caracteres" required />
+          <button type="button" class="toggle-password" data-target="registoPassword" aria-label="Mostrar palavra-passe">👁</button>
+        </label>
+        <button class="btn btn-primary btn-block" type="submit">Criar conta</button>
+        <p class="auth-switch">Já tens conta? <a href="login.html">Inicia sessão</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

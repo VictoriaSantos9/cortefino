@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Morfológico | Corte Fino</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">c.</span> corte fino</a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="cortes.html">Cortes</a>
+        <a href="recomendacoes.html">Recomendações</a>
+        <a href="favoritos.html">Favoritos</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="meu-perfil.html">Meu perfil</a>
+        <a class="btn btn-dark" href="login.html">Sair</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-space">
+    <section class="panel">
+      <p class="eyebrow">Perfil capilar</p>
+      <h1>Descobre o teu estilo ideal</h1>
+      <p class="section-intro">Responde a estas perguntas para receber sugestões com base na tua morfologia e no teu cabelo.</p>
+
+      <form class="profile-form" action="recomendacoes.html">
+        <div class="grid-two">
+          <label>
+            Formato do rosto
+            <select required>
+              <option value="">Seleciona</option>
+              <option>Oval</option>
+              <option>Redondo</option>
+              <option>Quadrado</option>
+              <option>Triangular</option>
+              <option>Alongado</option>
+            </select>
+          </label>
+
+          <label>
+            Curvatura do cabelo
+            <select required>
+              <option value="">Seleciona</option>
+              <option>Liso</option>
+              <option>Ondulado</option>
+              <option>Encaracolado</option>
+              <option>Crespo</option>
+            </select>
+          </label>
+
+          <label>
+            Volume do cabelo
+            <select required>
+              <option value="">Seleciona</option>
+              <option>Baixo</option>
+              <option>Natural</option>
+              <option>Alto</option>
+            </select>
+          </label>
+
+          <label>
+            Espessura
+            <select required>
+              <option value="">Seleciona</option>
+              <option>Fino</option>
+              <option>Médio</option>
+              <option>Grosso</option>
+            </select>
+          </label>
+
+          <label>
+            Comprimento ideal
+            <select required>
+              <option value="">Seleciona</option>
+              <option>Curto</option>
+              <option>Médio</option>
+              <option>Longo</option>
+            </select>
+          </label>
+
+          <label>
+            Objetivo pretendido
+            <select required>
+              <option value="">Seleciona</option>
+              <option>Mais volume</option>
+              <option>Mais definição</option>
+              <option>Estilo natural</option>
+              <option>Mais leveza</option>
+            </select>
+          </label>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Guardar perfil</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adicionar Corte | Admin</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body class="admin-body">
+  <aside class="admin-sidebar">
+    <div class="admin-brand">Corte Fino</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a class="active" href="gerir-cortes.html">Gerir cortes</a>
+      <a href="gerir-categorias.html">Categorias</a>
+      <a href="gerir-utilizadores.html">Utilizadores</a>
+      <a href="gerir-comentarios.html">Comentários</a>
+      <a href="gerir-moderacao.html">Moderação</a>
+      <a href="gerir-visagismo.html">Visagismo</a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-header">
+      <h1>Novo corte</h1>
+    </header>
+
+    <section class="table-card">
+      <form class="admin-form">
+        <label>Nome do corte
+          <input type="text" placeholder="Ex: Pixie texturizado" />
+        </label>
+        <label>Categoria
+          <select>
+            <option>Curto</option>
+            <option>Médio</option>
+            <option>Longo</option>
+          </select>
+        </label>
+        <label>Descrição
+          <textarea rows="5" placeholder="Descreve o corte..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Guardar corte</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
